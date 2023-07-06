@@ -48,15 +48,72 @@
                 
               
 
-class Account:
-        name="accontname"
-def __init__(self,account_number,amount):
-        self.account_number
-        self.amount
-def count_money(self):
-        return f"{self.account_number}"
+# class Account:
+#         name="accontname"
+# def __init__(self,account_number,amount):
+#         self.account_number
+#         self.amount
+# def count_money(self):
+#         return f"{self.account_number}"
 
-        
+#           def __init__(self,name,country,unique_ingredients,preparation_time,cooking_method,nutritional_value) :
+#          self.name=name
+#          self.country=country
+#          self.unique_ingredients=unique_ingredients
+#          self.preparation_time=preparation_time
+#          self.cooking_method=cooking_method
+#          self.nutritional_value=nutritional_value
+# class MoroccanRecipe(Recipe):
+#     def __init__(self, name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value):
+#         super().__init__(name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value)
+#     def cook(self):
+#         return f"for{self.name} of country  {self.country}  cook the meal with{self.ingredients} and prepare at{self.preparation_time} using method{self.cooking_method}to gain  nutritional_value{self.nutritional_value}"
+# class EthopianRecipe(Recipe):
+#     def __init__(self, name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value):
+#         super().__init__(name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value)
+#     def cook(self):
+#         return f"for{self.name} of country  {self.country}  cook the meal with{self.ingredients} and prepare at  {self.preparation_time} using method{self.cooking_method}to gain  nutritional_value{self.nutritional_value}"
+# class  NigerianRecipe(Recipe):
+#     def __init__(self, name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value):
+#         super().__init__(name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value)
+#     def cook(self):
+#         return f"for{self.name} of country  {self.country}  cook the meal with{self.ingredients} and prepare at{self.preparation_time} using method{self.cooking_method}to gain  nutritional_value{self.nutritional_value}"
+# # morrocan= MoroccanRecipe("Wheat","Morrocco",[Maji,skuma],"30 minutes","grilling","500gms","cumin")
+# # ethopian= EthiopianRecipe("chicken_breasts","Ethopia",[anjera,milk],"45 minutes","stewing","600gms","doro wat")
+# nigerian=NigerianRecipe("Jollo Rice","Nigeria",["rice","tomato","onion"],"1 hour","cooking","700gms","party jollof")
+# # print(morrocan.cook())
+# # print(ethiopian.cook())
+# print(nigerian.cook())
+
+
+
+class Recipe:
+     def __init__(self,name,country,unique_ingredients,preparation_time,cooking_method,nutritional_value) :
+         self.name=name
+         self.country=country
+         self.unique_ingredients=unique_ingredients
+         self.preparation_time=preparation_time
+         self.cooking_method=cooking_method
+         self.nutritional_value=nutritional_value
+class MoroccanRecipe(Recipe):
+    def __init__(self, name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value):
+        super().__init__(name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value)
+    def cook(self):
+        return f"for{self.name} of country  {self.country}  cook the meal with and prepare at{self.preparation_time} using method{self.cooking_method}to gain  nutritional_value{self.nutritional_value}"
+class EthopianRecipe(Recipe):
+    def __init__(self, name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value):
+        super().__init__(name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value)
+    def cook(self):
+        return f"for{self.name} of country  {self.country}  cook the meal with and prepare at  {self.preparation_time} using method{self.cooking_method}to gain  nutritional_value{self.nutritional_value}"
+class  NigerianRecipe(Recipe):
+    def __init__(self, name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value):
+        super().__init__(name, country, unique_ingredients, preparation_time, cooking_method, nutritional_value)
+    def cook(self):
+        return f"for{self.name} of country  {self.country}  cook the meal with and prepare at{self.preparation_time} using method{self.cooking_method}to gain  nutritional_value{self.nutritional_value}"
+# morrocan= MoroccanRecipe("Wheat","Morrocco",[Maji,skuma],"30 minutes","grilling","500gms","cumin")
+# ethopian= EthiopianRecipe("chicken_breasts","Ethopia",[anjera,milk],"45 minutes","stewing","600gms","doro wat")
+nigerian=NigerianRecipe("Jollof","Nigeria","pepper","3hours","stiring","proteins")
+print(nigerian.cook())
 
         
     

@@ -7,5 +7,5 @@ class Vendor(models.Model):
     email = models.CharField(max_length=32)
     username = models.CharField(max_length=32)
     password = models.CharField(max_length=32)
-    def __strrr__(self):
+    def __str__(self):
         return self.name
