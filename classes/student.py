@@ -58,7 +58,7 @@
 
 #           def __init__(self,name,country,unique_ingredients,preparation_time,cooking_method,nutritional_value) :
 #          self.name=name
-#          self.country=country
+#          self.countrgit push -u origin mainy=country
 #          self.unique_ingredients=unique_ingredients
 #          self.preparation_time=preparation_time
 #          self.cooking_method=cooking_method
